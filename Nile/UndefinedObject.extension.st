@@ -41,3 +41,8 @@ UndefinedObject >> >! anotherMagnitude [
 UndefinedObject >> >=! anotherMagnitude [
 	^ false
 ]
+
+{ #category : #'*Nile' }
+UndefinedObject >> negated_ [
+	^ nil.
+]

@@ -35,6 +35,15 @@ NileNumberTest >> testMultiplication [
 ]
 
 { #category : #tests }
+NileNumberTest >> testNegated_ [
+	self
+		assert: (3 negated_) equals: -3;
+		assert: (0 negated_) equals: 0;
+		assert: (nil negated_) equals: nil.
+				
+]
+
+{ #category : #tests }
 NileNumberTest >> testPlus [
 	self
 		assert: (2 +! 3) equals: 5;

@@ -26,3 +26,8 @@ Number >> /! aNumber [
 	aNumber isZero ifTrue:[ ^ nil ].
 	^ self / aNumber.
 ]
+
+{ #category : #'*Nile' }
+Number >> negated_ [
+	^ self negated
+]
