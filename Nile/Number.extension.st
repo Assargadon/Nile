@@ -7,15 +7,15 @@ Number >> *! aNumber [
 ]
 
 { #category : #'*Nile' }
-Number >> +! anotherMagnitude [
-	^ anotherMagnitude
+Number >> +! aNumber [
+	^ aNumber
 		ifNil: [ self + 0 ]
 		ifNotNil: [ :notNilArg | self + notNilArg ]
 ]
 
 { #category : #'*Nile' }
-Number >> -! anotherMagnitude [
-	^ anotherMagnitude
+Number >> -! aNumber [
+	^ aNumber
 		ifNil: [ self - 0 ]
 		ifNotNil: [ :notNilArg | self - notNilArg ]
 ]
