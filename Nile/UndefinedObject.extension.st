@@ -6,13 +6,15 @@ UndefinedObject >> *! aNumber [
 ]
 
 { #category : #'*Nile' }
-UndefinedObject >> +! anotherNumber [ 
-	^ 0 +! anotherNumber.
+UndefinedObject >> +! aNumber [
+	aNumber ifNil:[ ^ nil ].
+	^ aNumber.
 ]
 
 { #category : #'*Nile' }
-UndefinedObject >> -! anotherNumber [ 
-	^ 0 -! anotherNumber
+UndefinedObject >> -! aNumber [
+	aNumber ifNil:[ ^ nil ].
+	^ aNumber negated.
 ]
 
 { #category : #'*Nile' }
