@@ -11,6 +11,8 @@ NileNumberTest >> testDivision [
 		assert: (6 /! 0) equals: nil;		
 		assert: (3 /! nil) equals: nil;
 		assert: (nil /! 3) equals: nil;
+		assert: (nil /! 0) equals: nil;
+		assert: (0 /! nil) equals: nil;
 		assert: (nil /! nil) equals: nil.		
 ]
 
