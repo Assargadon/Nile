@@ -1,6 +1,6 @@
 Class {
 	#name : #NileNumberTest,
-	#superclass : #ClassTestCase,
+	#superclass : #TestCase,
 	#category : #'Nile-Test'
 }
 
